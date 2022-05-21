@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <h2>TASK MANAGER</h2>
+    <div class="container">
+      <form id="task-form" onsubmit="submitTask(event)">
+        <div class="row">
+          <div class="box"></div>
+          <input class="input" name="project" placeholder="Project" />
+        </div>
+        <div class="row">
+          <div class="box"></div>
+          <input class="input" name="task" placeholder="Task" />
+        </div>
+        <div class="row">
+          <div class="box"></div>
+          <input class="input" name="start-time" placeholder="Start Time (8:00am, 1:00pm)" />
+        </div>
+        <div class="row">
+          <div class="box"></div>
+          <input class="input" name="end-time" placeholder="End Time (1:00pm, 8:00pm)" />
+        </div>
+        <div class="row">
+          <div class="box"></div>
+          <textarea class="input textarea" name="notes" placeholder="Notes"></textarea>
+        </div>
+        <div class="row">
+          <input class="button" type="submit" value="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
